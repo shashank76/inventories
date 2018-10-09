@@ -34,6 +34,8 @@ gem 'geocoder'
 gem 'countries'
 gem "money", "~> 6.9"
 gem 'money-open-exchange-rates'
+gem 'will_paginate', '~> 3.0.5'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

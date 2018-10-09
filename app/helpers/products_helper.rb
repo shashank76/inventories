@@ -12,7 +12,8 @@ module ProductsHelper
 	def current_zone
 		@ip = request.ip
 		country_code = Geocoder.search(@ip).first.country
-		@c = ISO3166::Country[country_code]
+		# @c = ISO3166::Country[country_code]
+		@c = ISO3166::Country['in']
 		@c = @c.currency
 	end
 
