@@ -92,12 +92,7 @@ GEM
       warden (~> 1.2.3)
     erubi (1.7.1)
     execjs (2.7.0)
-    faraday (0.8.0.rc2)
-      multipart-post (~> 1.1)
     ffi (1.9.25)
-    freegeoip (0.1.0)
-      faraday (= 0.8.0.rc2)
-      multi_json (= 1.2.0)
     geocoder (1.5.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -134,7 +129,6 @@ GEM
       money (~> 6.6)
     msgpack (1.2.4)
     multi_json (1.2.0)
-    multipart-post (1.2.0)
     nio4r (2.3.1)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
@@ -241,7 +235,6 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   countries
   devise
-  freegeoip
   geocoder
   jbuilder (~> 2.5)
   jquery-rails

@@ -33,7 +33,6 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'geocoder'
 gem 'countries'
 gem "money", "~> 6.9"
-gem 'freegeoip'
 gem 'money-open-exchange-rates'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
