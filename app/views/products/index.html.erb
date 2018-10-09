@@ -1,0 +1,17 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div class="content-wrapper">  
+  <section class="content">
+   <div class="box box-info">
+   	<% @products.each do |product|%>
+		<div class="col-md-3 column productbox">
+		    <%= image_tag(product.image.file, class: "img-responsive", size: "200*200")%>
+		    <div class="producttitle"><%= product.name %></div>
+		    <div class="productprice"><div class="pull-right"><a href="#" class="btn btn-danger btn-sm" role="button">BUY</a></div><div class="pricetext"><%= current_zone.symbol%><%= price_calculation(product.price, update_currency_rate(current_zone.iso_code)) %></div></div>
+		</div>
+	<%end%>
+	</div>
+	</section>
+</div>
